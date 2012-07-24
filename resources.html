@@ -24,8 +24,12 @@
     <![endif]-->
 
     <script language="javascript" type="text/javascript">
-         $(".collapse").collapse()
+      $(".collapse").collapse()
     </script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load("jquery", "1.7");</script>
+
   </head>
 
   <body onload="prettyPrint()">
@@ -42,25 +46,25 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="">
-                  <a href="./index.html">About</a>
+                <a href="./index.html">About</a>
               </li>
               <li class="">
-                  <a href="./news.html">News</a>
+                <a href="./news.html">News</a>
               </li>
               <li class="">
-                  <a href="./people.html">People</a>
+                <a href="./people.html">People</a>
               </li>
               <li class="">
-                  <a href="./projects.html">Projects</a>
+                <a href="./projects.html">Projects</a>
               </li>
               <li class="">
-                  <a href="./events.html">Events</a>
+                <a href="./events.html">Events</a>
               </li>
               <li class="active">
-                  <a href="./resources.html">Resources</a>
+                <a href="./resources.html">Resources</a>
               </li>
               <li class="">
-                  <a href="./contact.html">Contact</a>
+                <a href="./contact.html">Contact</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -70,7 +74,34 @@
 
     <div class="container">
 
-	<footer><hr></footer>    
+      <div class="tabbable">
+        <ul id="myTab" class="nav nav-tabs">
+          <li class="active"><a href="#design" data-toggle="tab">design</a></li>
+          <li><a href="#programming" data-toggle="tab">programming</a></li>
+          <li><a href="#music" data-toggle="tab">music</a></li>
+          <li><a href="#art" data-toggle="tab">art</a></li>
+          <li><a href="#writing" data-toggle="tab">writing</a></li>
+          <li><a href="#tips" data-toggle="tab">tips + tricks</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="design">
+          </div>
+          <div class="tab-pane fade in" id="programming">
+          </div>
+          <div class="tab-pane fade in" id="music">
+          </div>
+          <div class="tab-pane fade in" id="art">
+          </div>
+          <div class="tab-pane fade in" id="writing">
+          </div>
+          <div class="tab-pane fade in" id="tips">
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <hr>
+      </footer>    
 
     </div> <!-- /container -->
 
