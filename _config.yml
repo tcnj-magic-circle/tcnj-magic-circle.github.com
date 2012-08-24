@@ -6,15 +6,17 @@ permalink:  /news/:year-:month-:day-:title/
 
 
 navigation:
-- title: Contact
-  url: /contact/
-- title: Events
-  url: /events/
+- title: Home
+  url: /
 - title: News
   url: /news/
+- title: Events
+  url: /events/
 - title: People
   url: /people/
 - title: Projects
   url: /projects/
 - title: Resources
   url: /resources/
+- title: Contact
+  url: /contact/
