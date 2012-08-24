@@ -9,64 +9,22 @@ layout: bootstrap
   </ul>
   <div class="tab-content">
     <div class="tab-pane fade in active" id="eboard">
-      <div class="row">
-        <div class="span4">
-          <div class="well">
-            <h2>Alexa Cain</h2>
-            <h2><small>President, 2012-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomacain.js"></script></p>
-            <p><a class="btn" href="http://www.tcnj.edu/~caina1/applet/">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Bobby Canciello</h2>
-            <h2><small>Vice President, 2012-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomrcanciello.js"></script></p>
-            <p><a class="btn" href="http://www.bobbycanciellointeractivedesign.weebly.com/">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Glen Oakley</h2>
-            <h2><small>Secretary, 2012-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomgoakley.js"></script></p>
-            <p><a class="btn" href="http://www.tcnj.edu/~oakleyg1/">View more &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <div class="well">
-            <h2>Teddy Sudol</h2>
-            <h2><small>Treasurer, 2012-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomtsudol.js"></script></p>
-            <p><a class="btn" href="http://tsudol.com/">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Steve Boyland</h2>
-            <h2><small>Publicist, 2011-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomsboyland.js"></script></p>
-            <p><a class="btn" href="http://www.steveboyland.com/">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Tim Honeywell</h2>
-            <h2><small>Webmaster, 2012-present</small></h2>
-            <p></p>
-            <p><script language="Javascript" type="text/javascript" src="/scripts/funscripts/randomthoneywell.js"></script></p>
-            <p><a class="btn" href="http://tfhoneywell.com/">View more &raquo;</a></p>
-          </div>
-        </div>
-      </div>
+      {% for member in site.eboard %}
+        {% if forloop.index0 == 0 or forloop.index0 == 3 %}
+          <div class="row">
+        {% endif %}
+	<div class="span4">
+	  <div class="well">
+	    <h2>{{ member.name }}</h2>
+	    <h2><small>{{ member.title }}</small></h2>
+	    <p>{{ member.bio }}</p>
+	    <p><a class="btn" href="{{ member.external }}" target="_blank">More &raquo;</a></p>
+	  </div>
+	</div>
+	{% if forloop.index0 == 2 or forloop.index0 == 5 %}
+	  </div><!--/row-->
+	{% endif %}
+      {% endfor %}
     </div>
     <div class="tab-pane fade in " id="alumni">
       <div class="row">
