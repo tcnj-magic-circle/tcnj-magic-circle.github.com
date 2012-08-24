@@ -1,5 +1,25 @@
 ---
 layout: bootstrap
+
+alumni:
+- name: Andy Lohmann
+  titles: [Co-Founder, President (2010-2012)]
+- name: Vin St. John
+  titles: [Co-Founder, Vice President (2010)]
+- name: Justin Dilks
+  titles: [Co-Founder, Treasurer (2010), Vice President (2010-2012)]
+- name: Tom Briechle
+  titles: [Charter Member, Secretary (2010-2012)]
+- name: Richard Gebbia
+  titles: [Charter Member, Publicist (2010-2011)]
+- name: Emily Calfo
+  titles: [Charter Member, Publicist (2010-2011), Webmaster (2011-2012)]
+- name: Gabrielle Fuller
+  titles: [Charter Member, Webmaster (2010-2011)]
+- name: Crystal Kan
+  titles: [Charter Member]
+- name: Nate Chmielinski
+  titles: [Treasurer (2011-2012)]
 ---
 
 <div class="tabbable">
@@ -25,104 +45,28 @@ layout: bootstrap
 	  </div><!--/row-->
 	{% endif %}
       {% endfor %}
-    </div>
-    <div class="tab-pane fade in " id="alumni">
-      <div class="row">
-        <div class="span4">
-          <div class="well">
-            <h2>Andy Lohmann</h2>
-            <h2><small>co-founder</small></h2>
-            <h2><small>President, 2010-2012</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Vin St. John</h2>
-            <h2><small>co-founder</small></h2>
-            <h2><small>Vice President, 2010</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Justin Dilks</h2>
-            <h2><small>co-founder</small></h2>
-            <h2><small>Treasurer, 2010</small></h2>
-            <h2><small>Vice President, 2010-2012</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <div class="well">
-            <h2>Tom Briechle</h2>
-            <h2><small>charter member</small></h2>
-            <h2><small>Secretary, 2010-2012</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Richard Gebbia</h2>
-            <h2><small>charter member</small></h2>
-            <h2><small>Publicist, 2010-2011</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Emily Calfo</h2>
-            <h2><small>charter member</small></h2>
-            <h2><small>Publicist, 2010-2011</small></h2>
-            <h2><small>Webmaster, 2011-2012</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <div class="well">
-            <h2>Gabrielle Fuller</h2>
-            <h2><small>charter member</small></h2>
-            <h2><small>Webmaster, 2010-2011</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Crystal Kan</h2>
-            <h2><small>charter member</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            <h2>Nate Chmielinski</h2>
-            <h2><small>Treasurer, 2011-2012</small></h2>
-            <p></p>
-            <p></p>
-            <p><a class="btn" href="">View more &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div><!--/eboard-->
+    <div class="tab-pane fade in" id="alumni">
+      {% for alumn in page.alumni %}
+        {% if forloop.index0 == 0 or forloop.index0 == 3 or forloop.index0 == 6 or forloop.index0 == 9 %}
+          <div class="row">
+        {% endif %}
+	<div class="span4">
+	  <div class="well">
+	    <h2>{{ alumn.name }}</h2>
+	    {% for title in alumn.titles %}
+	      {% if forloop.first %}
+	        <h2><small>{{ title }}</small></h2>
+	      {% else %}
+	        <p>{{ title }}</p>
+	      {% endif %}
+	    {% endfor %}
+	  </div>
+	</div>
+	{% if forloop.index0 == 2 or forloop.index0 == 5 %}
+	  </div><!--/row-->
+	{% endif %}
+      {% endfor %}
+    </div><!--/alumni-->
   </div>
 </div>
