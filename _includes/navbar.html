@@ -1,0 +1,25 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="./index.html">Magic Circle @ TCNJ</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+	  {% for link in site.navigation %}
+	    {% assign active = page.url %}
+	    {% if page.url == link.url %}
+	      {% assign active = 'active' %}
+	    {% endif %}
+	    <li class="{{ active }}">
+	      <a href="{{ link.url }}">{{ link.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div><!--/navbar-inner -->
+</div>

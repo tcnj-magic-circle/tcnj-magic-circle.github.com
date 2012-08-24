@@ -1,0 +1,22 @@
+title: TCNJ Magic Circle
+
+baseurl:    /
+future:     false
+permalink:  /news/:year-:month-:day-:title/
+
+
+navigation:
+- title: Contact
+  url: /contact/
+- title: Events
+  url: /events/
+- title: News
+  url: /news/
+- title: People
+  url: /people/
+- title: Projects
+  url: /projects/
+- title: Resources
+  url: /resources/
+- title: GitHub
+  url: https://github.com/tcnj-magic-circle
