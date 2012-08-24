@@ -9,6 +9,9 @@
       <a class="brand" href="./index.html">Magic Circle @ TCNJ</a>
       <div class="nav-collapse">
         <ul class="nav">
+	  <li>
+	    <a href="/">Home</a>
+	  </li>
 	  {% for link in site.navigation %}
 	    {% assign active = '' %}
 	    {% if page.url contains link.url %}

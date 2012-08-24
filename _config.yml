@@ -6,8 +6,6 @@ permalink:  /news/:year-:month-:day-:title/
 
 
 navigation:
-- title: Home
-  url: /
 - title: News
   url: /news/
 - title: Events
