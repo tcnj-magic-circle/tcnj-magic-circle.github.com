@@ -10,14 +10,17 @@
       <div class="nav-collapse">
         <ul class="nav">
 	  {% for link in site.navigation %}
-	    {% assign active = page.url %}
-	    {% if page.url == link.url %}
+	    {% assign active = '' %}
+	    {% if page.url contains link.url %}
 	      {% assign active = 'active' %}
 	    {% endif %}
 	    <li class="{{ active }}">
 	      <a href="{{ link.url }}">{{ link.title }}</a>
 	    </li>
 	  {% endfor %}
+	  <li>
+	    <a href="https://github.com/tcnj-magic-circle" target="_blank">GitHub</a>
+	  </li>
 	</ul>
       </div><!--/.nav-collapse -->
     </div>
