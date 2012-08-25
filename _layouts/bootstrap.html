@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tim Honeywell, Glen Oakley">
     <!-- Styles -->
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="../bootstrap/css/docs.css" rel="stylesheet">
-    <link href="../bootstrap/css/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/docs.css" rel="stylesheet">
+    <link href="/bootstrap/css/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" type="text/css" rel="stylesheet" />
     <style>
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 40px; /* to make the container go all the way to the bottom of the topbar */
       }
     </style>
     <!-- jQuery -->
@@ -27,7 +28,10 @@
 
   <body onload="prettyPrint()">
     {% include navbar.html %}
-    <div class="container">
+    {% if page.url == '/index.html' %}
+      {% include jumbomast.html %}
+    {% endif %}
+    <div class="container" id="content">
       {{ content }}
       {% include footer.html %}
     </div>

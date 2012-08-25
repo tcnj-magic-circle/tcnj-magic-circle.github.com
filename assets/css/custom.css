@@ -1,0 +1,17 @@
+/* http://colorschemedesigner.com/  Hue: 215() */
+
+body div.navbar.navbar-fixed-top {}
+body div.jumbotron.masthead {
+    background: #04819E;
+    margin:0px;
+}
+body div.jumbomast-bar {
+    border-bottom: 1px solid #888;
+    background: #EEE;
+}
+body #content {
+    padding-top: 20px;
+}
+body div.well {
+    border: 1px solid #60B9CE;
+}
