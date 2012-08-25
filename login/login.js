@@ -28,16 +28,16 @@ if (params['state'] == 'authorized') {
     if (params['error'])
 	window.location.assign("/");
     // extract and store the new token
-    localstorage.setItem('token_value', params['access_token']);
-    localstorage.setItem('token_expiration', 
+    localStorage.setItem('token_value', params['access_token']);
+    localStorage.setItem('token_expiration', 
 			 (new Date()).getTime() + params['expires_in']-2);
     $.getJSON("https://www.googleapis.com/oauth2/v1/userinfo?access_token="+params['access_token'], function(data, textStatus, jqXHR) {
 	if (!data['email'] || data.email.indexOf("@apps.tcnj.edu") < 0) {
 	    // not a valid TCNJ Google Apps account; NOPE!
-	    localstorage.setItem('token_expiration', (new Date()).getTime()-1);
+	    localStorage.setItem('token_expiration', (new Date()).getTime()-1);
 	    $('#login').innerHTML("<b>Error: Must log in with a valid TCNJ Google Apps account.</b>");
 	} else {
-	    localstorage.setItem('token_email', data.email);
+	    localStorage.setItem('token_email', data.email);
 	    $('#login').innerHTML("<h1>Welcome, " + data.email + "</h1>");
 	}
     });
