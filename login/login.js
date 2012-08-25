@@ -37,8 +37,7 @@ if (params['state'] == 'authorized') {
 function obtain_token() {
     var request = {
 	response_type:'token',
-	client_id:'827519299479-g8vtg60pb7ruj1ree1mooa5u67425fvt' + 
-	    '.apps.googleusercontent.com',
+	client_id:'471784770457.apps.googleusercontent.com',
 	redirect_uri:'http%3A%2F%2Ftcnj-magic-circle.github.com%2Flogin',
 	// https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email
 	// https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile
