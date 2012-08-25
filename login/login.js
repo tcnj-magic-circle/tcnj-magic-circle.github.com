@@ -49,7 +49,9 @@ if (params['state'] == 'authorized') {
 
 
 function load_stored_user() {
-    $('#login').html("<h1>Welcome, " + data.email + "</h1>");
+    $('#login').html("<h1>Welcome, " + 
+		     localStorage.getItem('token_email') + 
+		     "</h1>");
 }
 
 
