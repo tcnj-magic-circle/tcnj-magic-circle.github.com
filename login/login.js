@@ -14,10 +14,12 @@ if (!params['state']) {
     // no 'state' parameter passed; look for saved session
     if (token['value'] = localStorage.getItem('token_value')) {
 	token['expiration'] = localStorage.getItem('token_expiration');
-	if (!token['expiration'] || token['expiration'] <= (new Date()).getTime()){
-	    // token expired/ may have expired; get a new one
-	    localStorage.setItem('token_email', null);
+	if (!token['expiration'] || token['expiration'] <= (new Date()).getTime() || !localStorage.getItem('token_email')) {
+	    // token expired / may have expired / missing info; get a new one
+	    localStorage.removeItem('token_email');
 	    obtain_token();
+	} else {
+	    load_stored_user();
 	}
     } else {
 	// no token found; get one
