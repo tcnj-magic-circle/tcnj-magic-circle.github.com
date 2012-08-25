@@ -1,16 +1,40 @@
 ---
 layout: bootstrap
+
+
+contacts:
+- title: Email
+  content: mcircle (at) tcnj (dot) edu
+- title: Steam Group
+  content: tcnjmc
+  link: http://steamcommunity.com/groups/tcnjmc
+- title: Facebook
+  content: TCNJ Magic Circle Game Design
+  link: |
+    https://www.facebook.com/pages/TCNJ-Magic-Circle-Game-Design/167187826697165
+- title: Twitter
+  content: |
+    @TCNJ_Games
+  link: https://twitter.com/tcnj_games
+
 ---
 
 <div class="row">
   <div class="span12">
     <div class="well">
       <h3>Contact info</h3>
-      <hr>
-      <p><strong>email: </strong>mcircle (at) tcnj (dot) edu</p>
-      <p><strong>steam: </strong><a href="http://steamcommunity.com/groups/tcnjmc" >tcnjmc</a></p>
-      <p><strong>facebook: </strong><a href="https://www.facebook.com/pages/TCNJ-Magic-Circle-Game-Design/167187826697165" >TCNJ Magic Circle Game Design</a></p>
-      <p><strong>twitter: </strong><a href="https://twitter.com/#!/tcnj_games" >@TCNJ_Games</a></p>
+      <hr />
+      <ul>
+      {% for contact in page.contacts %}
+        <li><strong>{{ contact.title }} - </strong>
+	  {% if contact.link %}
+	    <a href="{{ contact.link }}" target="_blank">
+	  {% endif %}
+	  {{ contact.content }}
+	  {% if contact.link %} </a> {% endif %}
+	</li>
+      {% endfor %}
+      </ul>
     </div>
   </div>
 </div>
