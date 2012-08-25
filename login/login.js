@@ -38,11 +38,17 @@ if (params['state'] == 'authorized') {
 	    $('#login').html("<b>Error: Must log in with a valid TCNJ Google Apps account.</b>");
 	} else {
 	    localStorage.setItem('token_email', data.email);
-	    $('#login').html("<h1>Welcome, " + data.email + "</h1>");
+	    load_stored_user();
 	}
     });
 }
 // -------
+
+
+
+function load_stored_user() {
+    $('#login').html("<h1>Welcome, " + data.email + "</h1>");
+}
 
 
 function obtain_token() {
