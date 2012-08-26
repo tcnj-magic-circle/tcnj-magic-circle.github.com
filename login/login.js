@@ -32,7 +32,7 @@ if (params['state'] == 'authorized') {
     // extract and store the new token
     localStorage.setItem('token_value', params['access_token']);
     localStorage.setItem('token_expiration', 
-			 int((new Date()).getTime()/1000) + 
+			 parseInt((new Date()).getTime()/1000) + 
 			 params['expires_in']-2);
     $.getJSON("https://www.googleapis.com/oauth2/v1/userinfo?access_token="+params['access_token'], function(data, textStatus, jqXHR) {
 	if (!data['email'] || data.email.indexOf("@apps.tcnj.edu") < 0) {
