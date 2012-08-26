@@ -37,8 +37,8 @@ if (params['state'] == 'authorized') {
     $.getJSON("https://www.googleapis.com/oauth2/v1/userinfo?access_token="+params['access_token'], function(data, textStatus, jqXHR) {
 	if (!data['email'] || data.email.indexOf("@apps.tcnj.edu") < 0) {
 	    // not a valid TCNJ Google Apps account; NOPE!
-	    localStorage.setItem('token_expiration', 
-				 int(new Date()).getTime()/1000-1);
+	    localStorage.removeItem('token_value');
+	    localStorage.removeItem('token_expiration');
 	    $('#login').html("<b>Error: Must log in with a valid TCNJ Google Apps account.</b>");
 	} else {
 	    localStorage.setItem('token_email', data.email);
