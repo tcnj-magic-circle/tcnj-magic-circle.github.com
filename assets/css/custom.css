@@ -8,6 +8,20 @@ body div.jumbotron.masthead {
 body div.jumbomast-bar {
     border-bottom: 1px solid #888;
     background: #EEE;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+body div.jumbomast-bar ul.bs-docs-social-buttons {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:block;
+}
+body div.jumbomast-bar ul.bs-docs-social-buttons li {
+    display:inline-block;
+    margin:2px 8px;
+    padding:0;
 }
 body #content {
     padding-top: 20px;
