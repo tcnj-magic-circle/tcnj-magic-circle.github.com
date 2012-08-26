@@ -23,6 +23,10 @@ body div.jumbomast-bar ul.bs-docs-social-buttons li {
     margin:2px 8px;
     padding:0;
 }
+body div.jumbomast-bar ul.bs-docs-social-buttons .fb-like {
+    width:108px;
+    overflow:hidden;
+}
 body #content {
     padding-top: 20px;
 }
