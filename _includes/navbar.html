@@ -6,25 +6,30 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="../index.html">Magic Circle @ TCNJ</a>
+      <a class="brand" href="/">Magic Circle @ TCNJ</a>
       <div class="nav-collapse">
         <ul class="nav">
 	  <li>
-	    <a href="/">Home</a>
+	    <a title="Home" href="/"><i class="icon-home"></i></a>
 	  </li>
+	  <li class="divider-vertical"></li>
 	  {% for link in site.navigation %}
 	    {% assign active = '' %}
 	    {% if page.url contains link.url %}
 	      {% assign active = 'active' %}
 	    {% endif %}
 	    <li class="{{ active }}">
-	      <a href="{{ link.url }}">{{ link.title }}</a>
+	      <a title="{{ link.title }}" href="{{ link.url }}">
+		<i class="{{ link.glyph }}"></i>
+	      </a>
 	    </li>
 	  {% endfor %}
+	  <!--
 	  <li class="divider-vertical"></li>
 	  <li>
-	    <a href="https://github.com/tcnj-magic-circle" target="_blank">GitHub</a>
+	    <a href="https://github.com/tcnj-magic-circle" target="_blank"><img src="https://github.com/favicon.ico" width=16 height=16 /></a>
 	  </li>
+	  -->
 	</ul>
       </div><!--/.nav-collapse -->
     </div>

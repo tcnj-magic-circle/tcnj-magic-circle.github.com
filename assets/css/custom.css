@@ -1,6 +1,8 @@
 /* http://colorschemedesigner.com/  Hue: 215() */
 
-body div.navbar.navbar-fixed-top {}
+body div.navbar.navbar-fixed-top li {
+    text-align:center;
+}
 body div.jumbotron.masthead {
     background: #04819E;
     margin:0px;
@@ -22,6 +24,7 @@ body div.jumbomast-bar ul.bs-docs-social-buttons li {
     display:inline-block;
     margin:2px 8px;
     padding:0;
+    font-size: 4em;
 }
 body div.jumbomast-bar ul.bs-docs-social-buttons .fb-like {
     width:108px;

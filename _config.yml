@@ -43,13 +43,19 @@ eboard:
 navigation:
 - title: News
   url: /news/
+  glyph: icon-inbox
 - title: Events
   url: /events/
+  glyph: icon-calendar
 - title: People
   url: /people/
+  glyph: icon-user
 - title: Projects
   url: /projects/
+  glyph: icon-road
 - title: Resources
   url: /resources/
+  glyph: icon-book
 - title: Contact
   url: /contact/
+  glyph: icon-envelope
