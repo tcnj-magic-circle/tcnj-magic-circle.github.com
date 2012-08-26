@@ -23,47 +23,47 @@ alumni:
 ---
 
 <div class="tabbable">
-  <ul id="myTab" class="nav nav-tabs">
-    <li class="active"><a href="#eboard" data-toggle="tab">Eboard</a></li>
+  <ul class="nav nav-tabs">
+    {% for member in site.eboard %}
+      {% if forloop.first %} <li class="active">
+      {% else %} <li>
+      {% endif %}
+      <a href="#EBoard_{{ forloop.index0 }}" data-toggle="tab">
+	{{ member.title }}
+      </a></li>
+    {% endfor %}
+    <li class="divider-vertical"></li>
     <li><a href="#alumni" data-toggle="tab">Alumni</a></li>
   </ul>
   <div class="tab-content">
-    <div class="tab-pane fade in active" id="eboard">
-      {% for member in site.eboard %}
-        {% if forloop.index0 == 0 or forloop.index0 == 3 %}
-          <div class="row">
-        {% endif %}
-	<div class="span4">
-	  <div class="well">
-	    <h2>{{ member.name }}</h2>
-	    <h2><small>{{ member.title }}</small></h2>
-	    <p>{{ member.bio }}</p>
-	    <p><a class="btn" href="{{ member.external }}" target="_blank">More &raquo;</a></p>
-	  </div>
-	</div>
-	{% if forloop.index0 == 2 or forloop.index0 == 5 %}
-	  </div><!--/row-->
-	{% endif %}
-      {% endfor %}
-    </div><!--/eboard-->
+    {% for member in site.eboard %}
+      {% if forloop.first %} <div class="tab-pane fade in active" id="EBoard_{{ forloop.index0 }}">
+      {% else %} <div class="tab-pane fade in" id="EBoard_{{ forloop.index0 }}">
+      {% endif %}
+        <img class="img-eboard img-polaroid" src="/assets/img/eboard/{{ member.title }}.jpg" height="128" width="128" />
+        <h2>{{ member.name }}</h2>
+	<p>{{ member.bio }}</p>
+	<a class="btn" href="{{ member.external }}" target="_blank">More &raquo</a>
+      </div>
+    {% endfor %}
     <div class="tab-pane fade in" id="alumni">
       {% for alumn in page.alumni %}
-        {% if forloop.index0 == 0 or forloop.index0 == 3 or forloop.index0 == 6 or forloop.index0 == 9 %}
+      {% if forloop.index0 == 0 or forloop.index0 == 4 or forloop.index0 == 8 or forloop.index0 == 12 or forloop.index0 == 16 %}
           <div class="row">
         {% endif %}
-	<div class="span4">
+	<div class="span3">
 	  <div class="well">
-	    <h2>{{ alumn.name }}</h2>
+	    <h3>{{ alumn.name }}</h3>
 	    {% for title in alumn.titles %}
 	      {% if forloop.first %}
-	        <h2><small>{{ title }}</small></h2>
+	        <h3><small>{{ title }}</small></h3>
 	      {% else %}
 	        <p>{{ title }}</p>
 	      {% endif %}
 	    {% endfor %}
 	  </div>
 	</div>
-	{% if forloop.index0 == 2 or forloop.index0 == 5 %}
+	{% if forloop.index0 == 3 or forloop.index0 == 7 or forloop.index0 == 11 or forloop.index0 == 15 %}
 	  </div><!--/row-->
 	{% endif %}
       {% endfor %}
