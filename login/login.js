@@ -14,7 +14,7 @@ if (!params['state']) {
     // no 'state' parameter passed; look for saved session
     if (token['value'] = localStorage.getItem('token_value')) {
 	token['expiration'] = localStorage.getItem('token_expiration');
-	if (!token['expiration'] || token['expiration'] <= (new Date()).getTime() || !localStorage.getItem('token_email')) {
+	if (!token['expiration'] || token['expiration'] <= (new Date()).getTime()/1000 || !localStorage.getItem('token_email')) {
 	    // token expired / may have expired / missing info; get a new one
 	    localStorage.removeItem('token_email');
 	    obtain_token();
@@ -32,11 +32,13 @@ if (params['state'] == 'authorized') {
     // extract and store the new token
     localStorage.setItem('token_value', params['access_token']);
     localStorage.setItem('token_expiration', 
-			 (new Date()).getTime() + params['expires_in']-2);
+			 int((new Date()).getTime()/1000) + 
+			 params['expires_in']-2);
     $.getJSON("https://www.googleapis.com/oauth2/v1/userinfo?access_token="+params['access_token'], function(data, textStatus, jqXHR) {
 	if (!data['email'] || data.email.indexOf("@apps.tcnj.edu") < 0) {
 	    // not a valid TCNJ Google Apps account; NOPE!
-	    localStorage.setItem('token_expiration', (new Date()).getTime()-1);
+	    localStorage.setItem('token_expiration', 
+				 int(new Date()).getTime()/1000-1);
 	    $('#login').html("<b>Error: Must log in with a valid TCNJ Google Apps account.</b>");
 	} else {
 	    localStorage.setItem('token_email', data.email);
