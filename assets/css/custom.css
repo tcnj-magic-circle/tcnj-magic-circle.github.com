@@ -1,15 +1,22 @@
-/* http://colorschemedesigner.com/  Hue: 215() */
+/* nope /* http://colorschemedesigner.com/  Hue: 215() */
+
+/* Apparently our colour scheme is 'black, white, red, #E0E0E0' */
+
+body {
+    color: #111;
+    background-image: url("/assets/img/light_wool.png");
+}
 
 body div.navbar.navbar-fixed-top li {
     text-align:center;
 }
 body div.jumbotron.masthead {
-    background: #04819E;
+    background: #E0E0E0;/*#04819E;*/
     margin:0px;
 }
 body div.jumbomast-bar {
     border-bottom: 1px solid #888;
-    background: #EEE;
+    background: #B01010;
     padding-top:10px;
     padding-bottom:10px;
     text-align:center;
@@ -34,7 +41,9 @@ body #content {
     padding-top: 20px;
 }
 body div.well {
-    border: 1px solid #60B9CE;
+    background:#E0E0E0;
+    border: 1px solid #B01010;
+    box-shadow: inset 0px 0px 8px rgba(176,16,16,0.5);
 }
 body img.img-eboard {
     float:left;
