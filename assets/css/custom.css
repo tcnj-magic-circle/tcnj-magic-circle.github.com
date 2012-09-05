@@ -16,7 +16,7 @@ body div.jumbotron.masthead {
 }
 body div.jumbomast-bar {
     border-bottom: 1px solid #888;
-    background: #B01010;
+    background: rgba(126,126,126,0.8);
     padding-top:10px;
     padding-bottom:10px;
     text-align:center;
