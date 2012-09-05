@@ -4,12 +4,10 @@ layout: bootstrap
 
 <ul>
   {% for post in site.posts %}
-  <div class="well">
     <li>
       <a href="{{ post.url }}">
 	<h3>{{ post.date }} - {{ post.title }}</h3>
       </a>
     </li>
-</div>
   {% endfor %}
 </ul>
