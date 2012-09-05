@@ -48,13 +48,14 @@ alumni:
     {% endfor %}
 
     <div class="tab-pane fade in" id="alumni">
+      <p>
       {% for alumn in page.alumni %}
-	    <h3>{{ alumn.name }}</h3>
+	    <large>{{ alumn.name }} -- </large>
 	    {% for title in alumn.titles %}
 	      {% if forloop.last %}
-          <p>{{ title }}</p>
+          {{ title }}<br>
 	      {% else %}
-	        <p>{{ title }}, </p>
+	        {{ title }}, 
 	      {% endif %}
 	    {% endfor %}
       {% endfor %}
