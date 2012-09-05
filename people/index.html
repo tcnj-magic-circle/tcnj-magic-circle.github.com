@@ -41,8 +41,10 @@ alumni:
       {% else %} <div class="tab-pane fade in" id="EBoard_{{ forloop.index0 }}">
       {% endif %}
         <img class="img-eboard img-polaroid" src="/assets/img/eboard/{{ member.title }}.jpg" height="128" width="128" />
+        <div class="well">
         <h2>{{ member.name }}</h2>
 	<p>{{ member.bio }}</p>
+</div>
 	<a class="btn" href="{{ member.external }}" target="_blank">More &raquo</a>
       </div>
     {% endfor %}
