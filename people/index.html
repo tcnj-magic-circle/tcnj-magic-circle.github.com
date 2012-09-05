@@ -46,26 +46,17 @@ alumni:
 	<a class="btn" href="{{ member.external }}" target="_blank">More &raquo</a>
       </div>
     {% endfor %}
+
     <div class="tab-pane fade in" id="alumni">
       {% for alumn in page.alumni %}
-      {% if forloop.index0 == 0 or forloop.index0 == 4 or forloop.index0 == 8 or forloop.index0 == 12 or forloop.index0 == 16 %}
-          <div class="row">
-        {% endif %}
-	<div class="span3">
-	  <div class="well">
 	    <h3>{{ alumn.name }}</h3>
 	    {% for title in alumn.titles %}
-	      {% if forloop.first %}
-	        <h3><small>{{ title }}</small></h3>
+	      {% if forloop.last %}
+          <p>{{ title }}</p>
 	      {% else %}
-	        <p>{{ title }}</p>
+	        <p>{{ title }}, </p>
 	      {% endif %}
 	    {% endfor %}
-	  </div>
-	</div>
-	{% if forloop.index0 == 3 or forloop.index0 == 7 or forloop.index0 == 11 or forloop.index0 == 15 %}
-	  </div><!--/row-->
-	{% endif %}
       {% endfor %}
     </div><!--/alumni-->
   </div>
