@@ -43,7 +43,7 @@ body #content {
 body div.well {
     background:#E0E0E0;
     border: 1px solid #000000;
-    box-shadow: inset 0px 0px 8px rgba(176,16,16,0.5);
+    box-shadow: inset 0px 0px 8px rgba(176,176,176,0.5);
 }
 body img.img-eboard {
     float:left;
