@@ -6,7 +6,7 @@ layout: bootstrap
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">
-	<h3>{{ post.date }} - {{ post.title }}</h3>
+	<h3>{{ post.date | date: "%a %b %d %Y, %H:%M" }} - {{ post.title }}</h3>
       </a>
     </li>
   {% endfor %}
