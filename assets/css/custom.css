@@ -42,7 +42,7 @@ body #content {
 }
 body div.well {
     background:#E0E0E0;
-    border: 1px solid #B01010;
+    border: 1px solid #00000;
     box-shadow: inset 0px 0px 8px rgba(176,16,16,0.5);
 }
 body img.img-eboard {
