@@ -1,0 +1,52 @@
+Multiplayer
+Single player
+Platformer
+Points
+No points
+Score
+Ranks
+Shooter
+Puzzle
+Board game
+Timer
+No timer
+Time travel
+Infinite Lives
+Limited Lives
+Health
+Turn-based
+Dice
+Cards
+Boxes
+Counters
+Upgrades
+Achievements
+Rewards
+Player Levels
+Game Levels
+Sandbox
+Exploration
+Resources
+Strategy
+Role-Playing
+Luck
+Conquest
+Player Character
+The Player
+Reflexes
+Sneaking
+Deception
+Trading
+Music
+Customization
+Team-based
+Asynchronous
+Cooperative
+Social
+Linear
+Non-linear
+Object-based
+Passing
+Risk/Reward
+Questions/Answers
+Regeneration
