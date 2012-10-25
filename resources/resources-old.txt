@@ -1,0 +1,164 @@
+tags:
+- Design
+- Programming
+- Audio
+- Visual
+- Tabletop
+- Writing
+- Tips/Tricks
+- Inspiration
+
+resources:
+- name: World of Level Design
+  link: http://worldofleveldesign.com/
+  tags: [Design]
+- name: "#The50"
+  link: http://www.the-50.org/
+  tags: [Design]
+- name: Chrono Trigger's Design Secrets
+  link: http://www.gamasutra.com/view/feature/172993/chrono_triggers_design_secrets.php
+  tags: [Design]
+- name: Extra Credits
+  link: http://penny-arcade.com/patv/show/extra-credits
+  tags: [Design]
+- name: The Guide to Implementing 2D Platformers
+  link: http://higherorderfun.com/blog/2012/05/20/the-guide-to-implementing-2d-platformers/
+  tags: [Design]
+- name: CodeAcademy
+  link: http://www.codecademy.com/
+  tags: [Programming]
+- name: Learn Code the Hard Way
+  link: http://learncodethehardway.org/
+  tags: [Programming]
+- name: AIGameDev
+  link: http://aigamedev.com/
+  tags: [Programming]
+- name: libcinder
+  link: http://libcinder.org/
+  tags: [Programming]
+- name: Accidental noise
+  link: http://accidentalnoise.sourceforge.net/index.html
+  tags: [Programming]
+- name: Codepen.io
+  link: http://codepen.io/
+  tags: [Programming]
+- name: Classic computer science puzzles
+  link: http://www.codinghorror.com/blog/2007/09/classic-computer-science-puzzles.html
+  tags: [Programming]
+- name: Programming and logic puzzles
+  link: http://www.billthelizard.com/2009/06/programming-and-logic-puzzles.html
+  tags: [Programming]
+- name: Project Euler
+  link: http://projecteuler.net/
+  tags: [Programming]
+- name: Classical computer science problems
+  link: http://www.spoj.pl/problems/classical/
+  tags: [Programming]
+- name: Become a Programmer, Motherfucker!
+  link: http://programming-motherfucker.com/become.html
+  tags: [Programming]
+- name: Git Immersion
+  link: http://gitimmersion.com/index.html
+  tags: [Programming]
+- name: "Random.org: true randomness"
+  link: http://www.random.org/
+  tags: [Programming]
+- name: World Builder Page
+  link: http://markjstock.org/pages/builder.html
+  tags: [Programming]
+- name: Insanely Twisted Shadow Planet camera techniques
+  link: http://www.youtube.com/watch?v=aAKwZt3aXQM
+  tags: [Programming]
+- name: big ol' pile of links
+  link: http://www.reddit.com/r/AskReddit/comments/x8y71/reddit_what_is_an_awesome_littleknown_website/c5kafs1
+  tags: [Programming]
+- name: Create Digital Music
+  link: http://createdigitalmusic.com/
+  tags: [Audio]
+- name: puredata
+  link: http://puredata.info/
+  tags: [Audio]
+- name: Sound synthesis techniques
+  link: http://www.soundonsound.com/sos/allsynthsecrets.htm
+  tags: [Audio]
+- name: Sources for music and sound effects
+  link: http://ae.tutsplus.com/articles/roundup/the-best-sites-for-royalty-free-stock-music-and-sound-effects/
+  tags: [Audio]
+- name: CGTextures
+  link: http://cgtextures.com/
+  tags: [Visual]
+- name: Texture King
+  link: http://www.textureking.com/
+  tags: [Visual]
+- name: Mayang
+  link: http://mayang.com/textures/
+  tags: [Visual]
+- name: PSDbox
+  link: http://www.psdbox.com/
+  tags: [Visual]
+- name: TurboSquid
+  link: http://www.turbosquid.com/
+  tags: [Visual]
+- name: CG Tuts
+  link: http://cg.tutsplus.com/
+  tags: [Visual]
+- name: The Gnomon Workshop
+  link: http://www.thegnomonworkshop.com/
+  tags: [Visual]
+- name: Subtle Patterns
+  link: http://subtlepatterns.com/
+  tags: [Visual]
+- name: CG video tutorials
+  link: http://www.youtube.com/user/cannedmushrooms?feature=g-subs-u
+  tags: [Visual]
+- name: donjon's RPG tools
+  link: http://donjon.bin.sh/
+  tags: [Writing]
+- name: "Chaotic Shiny: Writing and Gaming generators"
+  link: http://chaoticshiny.com/
+  tags: [Writing]
+- name: Mythical Creatures List
+  link: http://www.mythicalcreatureslist.com/
+  tags: [Writing]
+- name: Asmor's scripts
+  link: http://www.asmor.com/scripts.php
+  tags: [Writing]
+- name: nonsense word generator
+  link: http://www.soybomb.com/tricks/words/
+  tags: [Writing]
+- name: location, location, location
+  link: http://www.gnomestew.com/tools-for-gms/quick-and-dirty-location-template
+  tags: [Writing]
+- name: Farchanter's game news Twitter list
+  link: https://twitter.com/#!/Farchanter/video-games-news
+  tags: [Tips/Tricks]
+- name: Solarized
+  link: http://ethanschoonover.com/solarized
+  tags: [Tips/Tricks]
+- name: Reset
+  link: http://reset-game.net/
+  tags: [Inspiration]
+- name: Chrome Experiments
+  link: http://www.chromeexperiments.com/
+  tags: [Inspiration]
+- name: "The best debugging story I've ever heard"
+  link: http://patrickthomson.tumblr.com/post/2499755681/the-best-debugging-story-ive-ever-heard
+  tags: [Inspiration]
+- name: Atomontage
+  link: http://atomontage.com/
+  tags: [Inspiration]
+- name: Sauropod Studio's Dev Blog
+  link: http://www.sauropodstudio.com/blog/
+  tags: [Inspiration]
+- name: Boards & Bits
+  link: http://www.boardsandbits.com/index.php
+  tags: [Tabletop]
+- name: Spielmaterial
+  link: http://www.spielmaterial.de/english4/
+  tags: [Tabletop]
+- name: Grand Prix International
+  link: http://www.grandprixintl.com/
+  tags: [Tabletop]
+- name: Panda Game Manufacturing
+  link: http://www.pandagm.com/
+  tags: [Tabletop]
