@@ -2,6 +2,16 @@
 layout: bootstrap
 ---
 
+{% for post in site.posts %}
+	<div class="well">
+		<a href="{{ post.url }}">
+		<h3>{{ post.date | date: "%a %b %d %Y" }} - {{ post.title }}</h3>
+		</a>
+	    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+	</div>
+{% endfor %}
+
+<!--
 <ul>
   {% for post in site.posts %}
     <li>
@@ -11,3 +21,4 @@ layout: bootstrap
     </li>
   {% endfor %}
 </ul>
+-->
