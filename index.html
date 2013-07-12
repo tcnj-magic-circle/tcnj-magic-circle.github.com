@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div id="banner">
+    <h1>Magic Circle @ TCNJ</h1>
+    <h2>Game Design / Game News / Gaming</h2>
+    <div><a href="#news">News</a> | <a href="#events">Events</a> | <a href="#projects">Projects</a> | <a href="#eboard">People</a></div>
+  </div>
+  <div id="news">
+    <hr id="newshr" />
+    <h2 id="newshead">News</h2>
+    <ol id="newslist">
+      {% for entry in site.posts limit:3 %}
+      <li class="newsentry">
+	<h3>{{ entry.title }}</h3>
+	<p>{{ entry.content | strip_html | truncatewords: 50 }} | <a href="/news.html#news{{ entry.date | date: "%Y%m%d" }}">More &raquo</a></p>
+      </li>
+      {% endfor %}
+    </ol>
+    <div><a href="/news.html">All News &raquo</a></div>
+  </div>
+  <div id="events">
+    <hr id="eventshr" />
+    <h2 id="eventshead">Events</h2>
+    <iframe id="jseventcal" src="https://www.google.com/calendar/embed?title=TCNJ%20Technical%20Collective&amp;height=480&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6ln6mr849l5b0np4al13qnminc%40group.calendar.google.com&amp;color=%23875509&amp;src=apps.tcnj.edu_5d9lkcanmhk15lb379adn0lhog%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style="border-width:0;display:none;" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+    <iframe id="plaineventcal" src="https://www.google.com/calendar/htmlembed?title=TCNJ%20Technical%20Collective&height=480&wkst=1&bgcolor=%23FFFFFF&src=6ln6mr849l5b0np4al13qnminc%40group.calendar.google.com&color=%23875509&src=apps.tcnj.edu_5d9lkcanmhk15lb379adn0lhog%40group.calendar.google.com&color=%232F6309&ctz=America%2FNew_York" style="border-width:0;" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+    <ol id="eventlist">
+      {% for event in site.events %}
+      <li class="evententry">
+	<h3>{{ event.title }}</h3>
+	<p>{{ event.desc }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="projects">
+    <hr id="projectshr" />
+    <h2 id="projectshead">Projects</h2>
+    <ol id="projectlist">
+      {% for project in site.projects %}
+      <li class="projectentry">
+        {% if project.imageaddr %}
+        <a href="{{ project.imageaddr }}" target="_blank"><img style="float:right;margin-left:1em;" src="{{ project.imageaddr }}" height=128 /></a>
+        {% endif %}
+	<h3>{{ project.title }}</h3>
+	<p>{{ project.desc }}
+	  {% if project.link %} | <a href="{{ project.link }}" target="_blank">More &raquo</a>
+	  {% endif %}
+	</p>
+	{% if project.members %}
+	<p><b>Who:</b> {% for member in project.members %}{{ member }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+	{% endif %}
+        <div style="clear:both;"></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  <div id="eboard">
+    <hr id="peoplehr" />
+    <h2 id="peoplehead">People</h2>
+    <ol id="eboardlist">
+      {% for member in site.eboard %}
+      {% if forloop.first %} <li class="eboardentry" id="EBoard_{{ forloop.index0 }}">
+      {% else %} <li class="eboardentry" id="EBoard_{{ forloop.index0 }}">
+      {% endif %}
+        <img src="/assets/img/eboard/{{ member.title }}.jpg" height="128" width="128" />
+	<h3><span class="title">{{ member.title }}</span> {{ member.name }}</h3>
+	<p>{{ member.bio }} | <a href="{{ member.link }}" target="_blank">More &raquo</a></p>
+	<div style="clear:both;"></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+<script>
+  document.getElementById("plaineventcal").style.display = "none";
+  document.getElementById("jseventcal").style.display = "block";
+</script>

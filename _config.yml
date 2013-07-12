@@ -1,0 +1,71 @@
+name: TCNJ Magic Circle
+title: TCNJ Magic Circle
+
+baseurl:    /
+future:     false
+permalink:  /news/:year-:month-:day-:title/
+
+
+news:
+- title: This is a News Title
+  desc: |
+    This is a description of the news.  It's fancy.
+- title: Moar News
+  desc: |
+    MOAAAR NEEEWS!
+
+
+events:
+- title: Magical Event
+  desc: |
+    Our magical event is an adventure into the land of opportunity.
+- title: Hello World
+  desc: |
+    Blah blah blah latin latin blah blah.
+
+
+projects:
+- title: Katamari Damacy
+  desc: |
+    NAAAAA NA NA NA NA NA NA NA NA KATAMARI DAMACYYYYYYY.  :3  The game's plot concerns a diminutive prince on a mission to rebuild the stars, constellations, and Moon, which were accidentally destroyed by his father, the King of All Cosmos.
+  members: [John Smith, Tam Sweetbeer]
+- title: Granola
+  desc: |
+    OM NOM NOM.  Eat lots of granloa.  Granola is a breakfast food and snack food, popular in North America, consisting of rolled oats, nuts, honey, and sometimes puffed rice, that is usually baked until crisp. During the baking process the mixture is stirred to maintain a loose, breakfast cereal-type consistency. Dried fruits, such as raisins and dates, are sometimes added.
+  link: http://granola.com/
+  imageaddr: http://images2.fanpop.com/images/photos/5500000/Random-wallpapers-random-5549791-1280-800.jpg
+
+
+eboard:
+- title: President
+  name: Alexa Cain
+  bio: |
+    Alexa Cain is a junior Computer Science major. She has been an active member of the club since she accidentally stumbled into the pre-semester planning meeting fall of her freshman year. She loves the theory of game design and psychology of play. She also thoroughly enjoys playtesting, possibly because she is excellent at breaking everything.
+  link: http://www.tcnj.edu/~caina1/applet/
+- title: Vice President
+  name: Bobby Canciello
+  bio: |
+    Bobby Canciello is a senior Interactive Multimedia major/Digital Art minor. An original charter member, his love for game design was awakened upon attending his first Global Game Jam in 2011. Though his passion lies in environment creation, he loves nothing more than being in the thick of production—brainstorming mechanics, modeling assets, generating design documents, and guiding a swarm of creative possibilities into one cohesive vision.
+  link: http://www.bobbycanciellointeractivedesign.weebly.com/
+- title: Secretary
+  name: Glen Oakley
+  bio: |
+    Glen Oakley is a junior Computer Science major. He has been a member of Magic Circle since his first year at TCNJ. He is excited to help make the club better than ever as both a board member and a skilled programmer. Glen is also a board member of TCNJ's ACM. Glen's favorite pony is Rarity.
+  link: http://glenoakley.com/
+- title: Treasurer
+  name: Teddy Sudol
+  bio: |
+    Teddy Sudol is a junior Computer Science major/Music minor. He joined the club in the Spring 2011 semester with the Painter Lee project. Teddy brings a strong programming background to his projects, but hopes to move into other areas such as music. He looks forward to expanding the Magic Circle club with new projects, events and ideas.
+  link: http://tsudol.com/
+- title: Publicist
+  name: Steve Boyland
+  bio: |
+    After stumbling into the very first Magic Circle meeting in Spring 2010 expecting free snacks (there were none), Steve has despite all odds stuck around to become the club Publicist for the second year in a row. A graphic designer and artist by trade, Steve keeps busy not doing any of that and browsing sports forums instead. Steve very much enjoys the creative process on the rare occasions when he does not completely hate the creative process. He is still waiting for the free snacks.
+  link: http://www.steveboyland.com/
+- title: Webmaster
+  name: Tim Honeywell
+  bio: |
+    Tim Honeywell is a senior pursuing a dual major in Computer Science and Interactive Multimedia. He is one of the charter members of the club, but wasn't heavily involved until he started the GRACE project in fall 2011. Tim is unapologetically interested in far too many subjects: AI, graphics, music, game theory, efficiency, and human-computer interaction. He may not be an expert in anything, but he knows how to bring the experts together and get them to make pretty things.
+  link: http://tfhoneywell.com/
+
+

@@ -1,0 +1,61 @@
+<header>
+  <div id="plainheaderdiv">
+    <ul>
+      <li><a href="https://www.facebook.com/pages/TCNJ-Magic-Circle-Game-Design/167187826697165">Facebook</a></li>
+      <li><a href="https://twitter.com/TCNJ_Games">Twitter</a></li>
+      <li><a href="https://plus.google.com/109709895980285363335" rel="publisher">Google+</a></li>
+      <li><a href="https://github.com/tcnj-magic-circle">Github</a></li>
+    </ul>
+  </div>
+  <div id="headerdiv" style="display:none">
+    <ul>
+      <li class="social facebook">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://www.facebook.com/pages/TCNJ-Magic-Circle-Game-Design/167187826697165" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="arial"></div>
+      </li>
+      <li class="social twitter">
+        <a href="https://twitter.com/TCNJ_Games" class="twitter-follow-button" data-show-count="false" style="font-size:small;">Follow @TCNJ_Games</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </li>
+      <li class="social github">
+        <iframe src="http://ghbtns.com/github-btn.html?user=tcnj-magic-circle&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      </li>
+      <li class="socal gplus">
+        <div class="g-plusone" data-size="medium" data-href="https://plus.google.com/109709895980285363335"></div>
+        <script type="text/javascript">
+          (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+      </li>
+      <li style="display:none;">
+        <a href="https://plus.google.com/109709895980285363335" rel="publisher">Find us on Google+</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<script>
+  var plainheaderdiv = document.getElementById("plainheaderdiv");
+  plainheaderdiv.style.display = "none";
+  var headerdiv = document.getElementById("headerdiv");
+  headerdiv.style.display = "block";
+  var opacity = 0;
+  headerdiv.style.opacity = opacity/100;
+  function incOpacity() {
+      opacity += 5;
+      headerdiv.style.opacity = opacity/100;
+      if (opacity < 80) {
+          window.setTimeout(incOpacity, 64);
+      }
+  }
+  window.setTimeout(incOpacity, 2560);
+</script>

@@ -1,0 +1,84 @@
+/* nope /* http://colorschemedesigner.com/  Hue: 215() */
+
+/* Apparently our colour scheme is 'black, white, red, #E0E0E0' */
+
+ul, ol {
+    list-style-type:none;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+hr {
+    margin-top:1.5em;
+    margin-bottom:2.5em;
+}
+
+iframe {
+    float:left;
+    padding-left:0px;
+    padding-right:0.5em;
+    padding-bottom:0.5ex;
+}
+
+body {
+    color: #111;
+    background-image: url("/assets/img/bg/hexellence.png");
+}
+
+body .container {
+    border-left:1px dashed rgba(127,127,127,0.1);
+    border-right:1px dashed rgba(127,127,127,0.1);
+    min-width:640px;
+    max-width:1024px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:32px;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+body #banner {
+    text-align:center;
+}
+
+body #eboard img {
+    border:1px solid black;
+    float:left;
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
+
+body #eboard h3 {
+    line-height:50%;
+}
+body #eboard h3 .title {
+    color:#888;
+}
+
+body header {
+    padding-top:6px;
+    padding-bottom:10px;
+    margin:0px;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    opacity:0.8;
+    background-color:rgba(64,64,64,0.1);
+    border-bottom:2px solid black;
+    height:16px;
+}
+body header:hover {
+    opacity:1;
+}
+body header ul {
+    margin:0px;
+    display:block;
+    text-align:center;
+}
+body header ul li {
+    display:inline-block;
+    margin-left:8px;
+    margin-right:8px;
+}
