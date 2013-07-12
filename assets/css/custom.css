@@ -71,6 +71,7 @@ body header {
 }
 body header:hover {
     opacity:1;
+    background-color:rgba(64,64,64,0.5);
 }
 body header ul {
     margin:0px;
