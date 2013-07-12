@@ -59,3 +59,12 @@ eboard:
   bio: |
     Tim Honeywell is a graduate, holding a dual major in Computer Science and Interactive Multimedia. He is one of the charter members of the club, but wasn't heavily involved until he started the GRACE project in Fall 2011. Tim is unapologetically interested in far too many subjects: AI, graphics, music, game theory, efficiency, and human-computer interaction. He may not be an expert in anything, but he knows how to bring the experts together and get them to make pretty things.
   link: http://tfhoneywell.com/
+
+
+resources:
+- title: HTML5 Game Development
+  blurb: An online course in which you will take standard game development techniques and use them to create high performance HTML5 applications
+  link: https://www.udacity.com/course/cs255
+- title: One Game A Month
+  blurb: Starting a game is easy - Finishing a game is hard - Your quest is to create one game each month for the rest of 2013
+  link: http://www.onegameamonth.com/

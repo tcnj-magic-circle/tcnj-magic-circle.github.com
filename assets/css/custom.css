@@ -56,6 +56,17 @@ body #eboard h3 .title {
     color:#888;
 }
 
+body #resources li {
+    margin-bottom:1ex;
+}
+body #resources a {
+    color:inherit;
+    text-decoration:none;
+}
+body #resources a:hover {
+    color:#888;
+}
+
 body header {
     padding-top:6px;
     padding-bottom:10px;
@@ -65,13 +76,14 @@ body header {
     top:0px;
     width:100%;
     opacity:0.8;
-    background-color:rgba(64,64,64,0.1);
+    background-color:rgba(64,64,64,0.2);
     border-bottom:2px solid black;
     height:16px;
 }
 body header:hover {
     opacity:1;
     background-color:rgba(64,64,64,0.5);
+    color:#fff;
 }
 body header ul {
     margin:0px;
@@ -82,4 +94,7 @@ body header ul li {
     display:inline-block;
     margin-left:8px;
     margin-right:8px;
+}
+body header #plainheaderdiv a {
+    color:inherit;
 }

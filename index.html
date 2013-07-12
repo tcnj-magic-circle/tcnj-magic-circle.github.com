@@ -6,7 +6,7 @@ layout: default
   <div id="banner">
     <h1>Magic Circle @ TCNJ</h1>
     <h2>Game Design / Game News / Gaming</h2>
-    <div><a href="#news">News</a> | <a href="#events">Events</a> | <a href="#projects">Projects</a> | <a href="#eboard">People</a></div>
+    <div><a href="#news">News</a> | <a href="#events">Events</a> | <a href="#projects">Projects</a> | <a href="#eboard">People</a> | <a href="#resources">Resources</a></div>
   </div>
   <div id="news">
     <hr id="newshr" />
@@ -77,6 +77,15 @@ layout: default
       </li>
       {% endfor %}
     </ol>
+  </div>
+  <div id="resources">
+    <hr id="resourceshr" />
+    <h2 id="resourceshead">Resources</h2>
+    <ul id="resourcelist">
+      {% for re in site.resources %}
+      <li><a href="{{ re.link }}"><b>{{ re.title }}</b></a> - {{ re.blurb }}</li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 <script>
