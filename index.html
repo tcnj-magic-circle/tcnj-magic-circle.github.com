@@ -6,8 +6,8 @@ layout: default
   <div id="banner">
     <h1>Magic Circle @ TCNJ</h1>
     <h2>Game Design / Game News / Gaming</h2>
-    <div><a href="#news">News</a> | <a href="#events">Events</a> | <a href="#projects">Projects</a> | <a href="#eboard">People</a> | <a href="#resources">Resources</a></div>
   </div>
+  <div id="navigation"><a href="#news">News</a> | <a href="#events">Events</a> | <a href="#projects">Projects</a> | <a href="#eboard">People</a> | <a href="#resources">Resources</a></div>
   <div id="news">
     <hr id="newshr" />
     <h2 id="newshead">News</h2>
@@ -91,4 +91,16 @@ layout: default
 <script>
   document.getElementById("plaineventcal").style.display = "none";
   document.getElementById("jseventcal").style.display = "block";
+</script>
+<script src="/assets/js/konami.js"></script>
+<script>
+    new Konami(function() {
+	var banner = document.getElementById("banner");
+	var img = document.createElement('img');
+	img.setAttribute("height", "128");
+	img.setAttribute("src", "/assets/img/konami.png");
+	while (banner.children.length > 0)
+	    banner.removeChild(banner.children[0]);
+	banner.appendChild(img);
+    });
 </script>

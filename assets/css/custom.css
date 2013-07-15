@@ -42,6 +42,10 @@ body #banner {
     text-align:center;
 }
 
+body #navigation {
+    text-align:center;
+}
+
 body #eboard img {
     border:1px solid black;
     float:left;
