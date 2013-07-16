@@ -103,5 +103,16 @@ layout: default
 	while (banner.children.length > 0)
 	    banner.removeChild(banner.children[0]);
 	banner.appendChild(img);
+	var acf = document.createElement("iframe");
+	acf.setAttribute("src", "http://adultcatfinder.com/embed/");
+	acf.setAttribute("width", "320");
+	acf.setAttribute("height", "430");
+	acf.setAttribute("frameBorder", "0");
+	acf.style.position = "fixed";
+	acf.style.bottom = "0px";
+	acf.style.right = "10px";
+	acf.style.zIndex = "100";
+	document.getElementsByTagName("body")[0].appendChild(acf);
+	//document.write('<iframe src="http://adultcatfinder.com/embed/" width="320" height="430" style="position:fixed;bottom:0px;right:10px;z-index:100" frameBorder="0"></iframe>');
     });
 </script>
