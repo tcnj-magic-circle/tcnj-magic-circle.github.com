@@ -80,15 +80,16 @@ body header {
     top:0px;
     width:100%;
     opacity:0.8;
-    background-color:rgba(64,64,64,0.2);
+    background-color:rgba(64,64,64,0.5);
     border-bottom:2px solid black;
     box-shadow:0px 2px 4px;
     height:16px;
 }
 body header:hover {
     opacity:1;
-    background-color:rgba(64,64,64,0.5);
-    color:#fff;
+    background-color:rgba(64,64,64,0.75);
+    border-bottom:2px solid black;
+    box-shadow:0px 2px 4px;
 }
 body header ul {
     margin:0px;
