@@ -62,6 +62,9 @@ eboard:
 
 
 resources:
+- title: Twine
+  blurb: An interactive storytelling engine that makes it easy for anyone to turn a non-linear story into a game
+  link: http://www.gimcrackd.com/etc/src/
 - title: HTML5 Game Development
   blurb: An online course in which you will take standard game development techniques and use them to create high performance HTML5 applications
   link: https://www.udacity.com/course/cs255
