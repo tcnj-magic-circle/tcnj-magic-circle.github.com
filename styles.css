@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face { font-family: Bitwise; src: url('fonts/bitwise/Bitwise.TTF'); } 
+
+body
+{
+	background-color:#00BFFF;
+}
+
+#wrapper
+{
+	text-align:center;
+}
+
+h1
+{
+	
+font-family: Bitwise;
+font-size:100px;
+margin:-1px;
+color:white;
+text-shadow:0px 0px 5px black;
+
+}
+
+h2
+{
+	
+font-family: Bitwise;
+font-size:48px;
+margin:5px;
+color:#02F916;
+text-shadow:0px 0px 15px blue;
+
+}
+
+h3
+{
+	
+font-family: Bitwise;
+font-size:24px;
+margin:5px;
+letter-spacing:1px;
+color:green;
+
+
+}
+
+p
+{
+	font-size:24px;
+}
+#bioBox
+{
+	display: inline-block;
+	width:40%;
+	background-color:#FFEC5C;
+	text-align:center;
+	padding:5px;
+	text-align:left;
+}
+
+#portrait
+{
+	margin:5px;
+	float:left;
+	font-size:148px;
+}
+
+a
+{
+	
+	text-decoration:none;
+	color:00BFFF;
+	
+	
+}
+
+li
+{
+	display:inline;
+	background-color:white;
+	margin:5px;
+	padding:5px;
+	font-size:24px;
+	
+}
+
+#intro
+{
+	display: inline-block;
+	width:33%;
+	
+}
+
+#project
+{
+	margin-bottom:5%;
+}
