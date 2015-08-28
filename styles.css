@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@font-face { font-family: Bitwise; src: url('fonts/bitwise/Bitwise.TTF'); } 
+@font-face { font-family: Bitwise; src: url('/fonts/bitwise/Bitwise.TTF'); } 
 
 body
 {
